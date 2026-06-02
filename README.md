@@ -40,7 +40,7 @@ Learn C# fundamentals.
 
 - Browser with dev tools enabled OR
 - IDE (VSCode preferred)
-- Latest dotnet (v 10) installed
+- .NET (v 7) installed (even if you have a new one like v 10, you still have to also have v 7 installed)
 
 
 ### Course Description:
