@@ -1,4 +1,4 @@
-# COURSE NOTES: .NET Development for Beginners (2024)
+# COURSE NOTES: Learning C#</span> (2023)
 
 
 ### 0. Introduction
@@ -13,17 +13,32 @@
 
 #### 0.1 What you should know
 
+- Need basic foundational programming concepts
+- Object-oriented programming concepts (classes, inheritance, etc.)
+  - Programming Foundations: Object-Oriented Design
+- IDE or Text Editor
+  - VSCODE
 
 
 
 #### 0.2 Setting up your environment
 
+- Need to have at least the .NET core development environment
 
+> #TIP: **Find out what version of .NET is installed**:
+> `dotnet --info`
+
+> #TIP: **Get your .NET version number:**\
+> `dotnet --version`
+
+> #TIP: The full version of Visual Studio is NOT needed - you can use VSCODE or any other IDE or Text Editor
 
 
 #### 0.3 How to run the examples
 
-
+- All examples are built as command line CLI console programs
+- USE CMD in Windows, or Terminal in Mac
+- 
 
 
 #### 0.4 CoderPad Challenges
