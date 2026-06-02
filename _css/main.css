@@ -81,7 +81,7 @@ h1[id*="wordpress"]::before {
 
 /* Course notes specific header styling */
 h1[id*="course-notes"] {
-  color: cadetblue;
+  color: brown;
 }
 
 
