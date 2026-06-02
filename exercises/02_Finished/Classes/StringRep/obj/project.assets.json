@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net7.0": {}
   },
@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/cjmarini/.nuget/packages/": {}
+    "C:\\Users\\erich\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Classes/StringRep/StringRep.csproj",
+      "projectUniqueName": "C:\\Users\\erich\\Documents\\_tutwrk\\linkedin\\ehtutwrk-lil-learning-c-sharp\\exercises\\02_Finished\\Classes\\StringRep\\StringRep.csproj",
       "projectName": "StringRep",
-      "projectPath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Classes/StringRep/StringRep.csproj",
-      "packagesPath": "/Users/cjmarini/.nuget/packages/",
-      "outputPath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Classes/StringRep/obj/",
+      "projectPath": "C:\\Users\\erich\\Documents\\_tutwrk\\linkedin\\ehtutwrk-lil-learning-c-sharp\\exercises\\02_Finished\\Classes\\StringRep\\StringRep.csproj",
+      "packagesPath": "C:\\Users\\erich\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erich\\Documents\\_tutwrk\\linkedin\\ehtutwrk-lil-learning-c-sharp\\exercises\\02_Finished\\Classes\\StringRep\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cjmarini/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\erich\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -30,6 +30,7 @@
       },
       "frameworks": {
         "net7.0": {
+          "framework": "net7.0",
           "targetAlias": "net7.0",
           "projectReferences": {}
         }
@@ -38,10 +39,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net7.0": {
+        "framework": "net7.0",
         "targetAlias": "net7.0",
         "imports": [
           "net461",
@@ -54,12 +62,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.20, 7.0.20]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

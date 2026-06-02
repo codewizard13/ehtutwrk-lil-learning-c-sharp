@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "N//cCTBaQRHa09m/stjkcKn0vGXbGBgzPvoRsBQfWHeaVSXvJVMRB8B+gNojweMdhzN4V4ptmN5BAbwRNQnijQ==",
+  "dgSpecHash": "ue8VdJQ6wmc=",
   "success": true,
-  "projectFilePath": "/Users/cjmarini/Documents/Git/Lynda/LearningCSharp/Finished/Classes/Modifiers/Modifiers.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\erich\\Documents\\_tutwrk\\linkedin\\ehtutwrk-lil-learning-c-sharp\\exercises\\02_Finished\\Classes\\Modifiers\\Modifiers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erich\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\erich\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\erich\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\erich\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
