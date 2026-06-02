@@ -1,17 +1,20 @@
+<!-- 🔗 Custom Stylesheet -->
+<link rel="stylesheet" href="../_css/main.css">
+
 # COURSE NOTES: Learning C#</span> (2023)
 
 
-### 0. Introduction
+## 0. Introduction
 
 
 
 
-#### 0.0 An introduction to learning C#
+### 0.0 An introduction to learning C#
 
 
 
 
-#### 0.1 What you should know
+### 0.1 What you should know
 
 - Need basic foundational programming concepts
 - Object-oriented programming concepts (classes, inheritance, etc.)
@@ -21,7 +24,7 @@
 
 
 
-#### 0.2 Setting up your environment
+### 0.2 Setting up your environment
 
 - Need to have at least the .NET core development environment
 
@@ -34,224 +37,288 @@
 > #TIP: The full version of Visual Studio is NOT needed - you can use VSCODE or any other IDE or Text Editor
 
 
-#### 0.3 How to run the examples
+### 0.3 How to run the examples
 
 - All examples are built as command line CLI console programs
 - USE CMD in Windows, or Terminal in Mac
-- 
 
+> #TIP: `Program.cs` is where our main code lives.
 
-#### 0.4 CoderPad Challenges
+> #TIP: **How to run code:** `dotnet run`
 
+> #GOTCHA: Because he's using .NET 7, you have to download and install that runtime -- the latest v. 10 runtime won't work/not backward compatible
 
+#### SIDEBAR: How to remove the extra verbose output in the command line:
 
+    ## ✅ The Command That Removes All Noise
 
-### 1. Overview of C#
+    ```powershell
+    dotnet run --no-build --no-restore
+    ```
 
+    This gives you **only** your program's actual output:
+    ```
+    Hello World!
+    What is your name?
+    ```
 
+    No `Restore succeeded`, no build timestamps, no warning blocks — just your app.
 
+    ## 🔄 Your New Workflow
 
-#### 1.0 Hello World C#
+    Since you're doing a tutorial and will keep editing code:
 
+    | When You've...              | Run This Command                                             |
+    | --------------------------- | ------------------------------------------------------------ |
+    | Changed your code           | `dotnet build` *(then)* `dotnet run --no-build --no-restore` |
+    | Just testing existing build | `dotnet run --no-build --no-restore`                         |
 
+    **Example after editing:**
+    ```powershell
+    dotnet build
+    dotnet run --no-build --no-restore
+    ```
 
+    ## ⚠️ Why This Works
 
-#### 1.1 Variables and data types
+    - `--no-restore` skips the NuGet package check
+    - `--no-build` skips compilation and runs the existing `.dll`
+    - Together they skip the CLI noise but still run your program
 
+    ## 🎯 Bonus: Fix the Warning Long-Term
 
+    The `NETSDK1138` warning appears because your project targets `net7.0` (out of support). Edit `HelloWorld.csproj`:
 
+    ```xml
+    <TargetFramework>net8.0</TargetFramework>
+    ```
 
-#### 1.2 Operators
+    Then your warnings disappear entirely and you can just use `dotnet run` normally again. But if your course requires `net7.0`, stick with the `--no-build --no-restore` workflow above.
 
+    This is the cleanest setup for tutorial work without breaking the course requirements!
 
 
 
-#### 1.3 Writing C# comments
+### 0.4 CoderPad Challenges
 
+- Course includes automated code challenges that appear when you click on the `Challenge` links in the course's TOC
+- Challenges hosted by CoderPad
+- Recommend using a desktop browser for best experience
+- Code challenge has 4 areas: instructions , code editor for your answer, test results, and output console
 
+> #OBSERVATION: Seems similar to LeetCode and Boot.dev
 
+> #TIP: The Console output in the lower left will give you automatic hints when you click `Test code` in the lower right
 
-#### 1.4 Chapter Quiz
+- When you finish each code challenge, return to the course TOC and then the next video will be his solution
 
 
+## 1. Overview of C#
 
 
-### 2. C# Program Flow
 
 
+### 1.0 Hello World C#
 
 
-#### 2.0 Conditionals with "if"
 
 
+### 1.1 Variables and data types
 
 
-#### 2.1 Conditionals with "switch"
 
 
+### 1.2 Operators
 
 
-#### 2.2 For loops
 
 
+### 1.3 Writing C# comments
 
 
-#### 2.3 While loops
 
 
+### 1.4 Chapter Quiz
 
 
-#### 2.4 Using break and continue
 
 
+## 2. C# Program Flow
 
 
-#### 2.5 Exceptions
 
 
+### 2.0 Conditionals with "if"
 
 
-#### 2.6 Chapter Quiz
 
 
+### 2.1 Conditionals with "switch"
 
 
-### 3. C# Strings
 
 
+### 2.2 For loops
 
 
-#### 3.0 String operations
 
 
+### 2.3 While loops
 
 
-#### 3.1 String formatting
 
 
+### 2.4 Using break and continue
 
 
-#### 3.2 String interpolation
 
 
+### 2.5 Exceptions
 
 
-#### 3.3 Using StringBuilder
 
 
+### 2.6 Chapter Quiz
 
 
-#### 3.4 String parsing
 
 
+## 3. C# Strings
 
 
-#### 3.5 </> Code Challenge: Count the data types
 
 
+### 3.0 String operations
 
 
-#### 3.6 Solution: Count the data types
 
 
+### 3.1 String formatting
 
 
-#### 3.7 Chapter Quiz
 
 
+### 3.2 String interpolation
 
 
-### 4. C# Functions
 
 
+### 3.3 Using StringBuilder
 
 
-#### 4.0 Function basics
 
 
+### 3.4 String parsing
 
 
-#### 4.1 Named and default parameters
 
 
+### 3.5 </> Code Challenge: Count the data types
 
 
-#### 4.2 Reference and out parameters
 
 
+### 3.6 Solution: Count the data types
 
 
-#### 4.3 Returning multiple values
 
 
+### 3.7 Chapter Quiz
 
 
-#### 4.4 </> Code Challenge: Palindrome
 
 
+## 4. C# Functions
 
 
-#### 4.5 Solution: Palindrome
 
 
+### 4.0 Function basics
 
 
-#### 4.6 Chapter Quiz
 
 
+### 4.1 Named and default parameters
 
 
-### 5. Object-Oriented C#
 
 
+### 4.2 Reference and out parameters
 
 
-#### 5.0 Defining C# classes
 
 
+### 4.3 Returning multiple values
 
 
-#### 5.1 Access modifiers
 
 
+### 4.4 </> Code Challenge: Palindrome
 
 
-#### 5.2 Defining properties
 
 
+### 4.5 Solution: Palindrome
 
 
-#### 5.3 Inheritance
 
 
+### 4.6 Chapter Quiz
 
 
-#### 5.4 String representation
 
 
+## 5. Object-Oriented C#
 
 
-#### 5.5 </> Code Challenge: Bank
 
 
+### 5.0 Defining C# classes
 
 
-#### 5.6 Solution: Bank
 
 
+### 5.1 Access modifiers
 
 
-#### 5.7 Chapter Quiz
 
 
+### 5.2 Defining properties
 
 
-### 6. Conclusion
 
 
+### 5.3 Inheritance
 
 
-#### 6.0 Next steps
+
+
+### 5.4 String representation
+
+
+
+
+### 5.5 </> Code Challenge: Bank
+
+
+
+
+### 5.6 Solution: Bank
+
+
+
+
+### 5.7 Chapter Quiz
+
+
+
+
+## 6. Conclusion
+
+
+
+
+### 6.0 Next steps
 
 
 
