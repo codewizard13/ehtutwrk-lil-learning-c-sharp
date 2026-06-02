@@ -120,12 +120,47 @@
 
 ### 1.0 Hello World C#
 
+> #GOTCHA: When I type the  `dotnet new console` in VSCODE in 2026, my `Program.cs` looks way different than his. Here's what I get:
 
+`Console.WriteLine("Hello, World!");`
 
+> #TIP: **Create new console app:** `dotnet new console`
+
+> #TIP: To make mine look like his I can just type what he has on his screen like the follwing:
+
+```cs
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+- `using system`: means our program will be using code in the .NET System namespac
+- **Namespaces**: help organize programs and prevent names in your code from colliding with names in .NET and other 3rd party libraries
+
+- C# as a whole is Object-oriented natively and all the code is organized into classes
+- The `Program` class is where we put our  `main` function (the entry point to the program)
+- `void` means there's no return value
+- The `Console` object represents a system terminal
+
+> #TIP: In C# you have to have semicolon line-endings - not optional!
+
+> #OBSERVATION: Using the namespace structure instead of the single line version (`Console.WriteLine...`) seems to automatically prevent the other verbose errors we were getting about .NET v7 deprecation before
+
+- **Top-level statements**: The term for all the other namespace and class statements I just referenced
+
+> #TIP: Starting with C# v.9 Microsoft allows you to drastically simplify by removing all the the top-level statements, so you have a more simple level like with JavaScript console type scripting simplicity.
 
 ### 1.1 Variables and data types
 
-
+- **C# is a STRONGLY-TYPED language**: Strong typing -- where we explicitly specify the type of variable for each variable -- helps to cut down on programming errors.
 
 
 ### 1.2 Operators
