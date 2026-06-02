@@ -257,6 +257,95 @@ Console.WriteLine(str);
 ### 1.3 Writing C# comments
 
 
+#### Single Line Comments
+
+```cs
+// Single line comments start with two slashes
+// You can have as many of these as you wants
+Console.WriteLine("Hello World!");
+```
+
+#### Multi-Line Comments
+
+```cs
+/* Multiple line comments start with a slash and a star
+and can continue for several lines 
+until a closing star and slash are encountered */
+```
+
+#### XML style comments
+
+```cs
+/// XML Comments are used to help provide documentation
+/// They start with triple-slashes and have a special syntax
+/// <summary>
+/// This is the main sample application function
+/// </summary>
+/// <param name='args'>An array of string arguments from the command line</param>
+/// <returns>
+/// No return value
+/// </returns>
+static void Main(string[] args)
+{
+...
+```
+> #TIP: **Learn what XML comment tags are available at**: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/recommended-tags
+
+> #TIP: **To Automatically Generate the Documentation file:** Add directives in the project file (ending in `.csproj`). Example:
+
+- Here are the directives to add to `Comments.csproj` below the `TargetFramework` property:
+- **GenerateDocumentationFile:** Tells the compiler to generate documentation from the comments
+- **DocumentationFile:** Specifies name of the documentation output file
+
+```xml
+<GenerateDocumentationFile>true</GenerateDocumentationFile>
+<DocumentationFile>Comments.xml</DocumentationFile>
+```
+
+- The result will look like:
+
+<div class="code-filename">Comments.csproj</div>
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>Comments.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
+```
+
+- Do `dotnet build` to build the finished executable without running
+- The result will be the extracted comments from source code are now in a generated documentation file `Comments.xml`
+
+<div class="code-filename">Comments.xml</div>
+
+```xml
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Comments</name>
+    </assembly>
+    <members>
+        <member name="M:Comments.Program.Main(System.String[])">
+            XML Comments are used to help provide documentation
+            They start with triple-slashes and have a special syntax
+            <summary>
+            This is the main sample application function
+            </summary>
+            <param name='args'>An array of string arguments from the command line</param>
+            <returns>
+            No return value
+            </returns>
+        </member>
+    </members>
+</doc>
+```
+
 
 
 ### 1.4 Chapter Quiz
