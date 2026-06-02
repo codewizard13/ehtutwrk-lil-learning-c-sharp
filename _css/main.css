@@ -212,11 +212,12 @@ h4[id*="---"] {
   margin-top: 2rem;
 }
 .code-filename::before {
-  content: "📄";
+  /* content: "📄"; */
+  content: "🖥️";
   /* font-family: FontAwesome; */
   /* content: "\f15c"; */
   padding: 0.3rem 0.6rem;
-  background: slategray;
+  /* background: slategray; */
   color: white;
   margin: 0;
   padding: 0.5rem 0.7rem;
