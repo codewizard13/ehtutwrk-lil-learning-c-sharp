@@ -162,11 +162,97 @@ namespace HelloWorld
 
 - **C# is a STRONGLY-TYPED language**: Strong typing -- where we explicitly specify the type of variable for each variable -- helps to cut down on programming errors.
 
+```cs
+// Declare some basic value type variables
+int i = 10;
+float f = 2.0f;
+decimal d = 10.0m;
+bool b = true;
+char c = 'c';
+
+// Declare a string - it's a collection of characters
+string str = "a string";
+
+// Declare an implicit variable
+var x = 10;
+var z = "Hello!";
+```
+
+> #TIP:  **null** means the variable has "no value"
+
+```cs
+// TODO: Declare an array of values
+int[] vals = new int[5];
+string[] strs = {"one","two", "three"};
+
+// TODO: Print the values using a Formatting String
+// Console.WriteLine("{0},{1},{2},{3},{4},{5},{6},{7}", i,c,b,str,f,d,x,z);
+
+// TODO: "null" means "no value"
+object obj = null;
+// Console.WriteLine(obj);
+
+// TODO: Implicit conversion between types
+long bignum;
+bignum = i;
+
+// TODO: Explicit conversions
+float i_to_f = (float)i;
+Console.WriteLine("{0}",i_to_f);
+
+int f_to_i = (int)f;
+Console.WriteLine("{0}", f_to_i);
+```
+
 
 ### 1.2 Operators
 
+- `exercises\01_Start\Overview\Operators\Program.cs`
+
+```cs
+// Declare some variables to excercise the operators
+int x = 10, y = 5;
+string a = "abcd", b = "efgh";
+
+// TODO: Basic math operators are +, -, /, *
+// Console.WriteLine("----- Basic Math -----");
+Console.WriteLine((x / y) * x);
+Console.WriteLine(a + b); // concatenates
 
 
+// // TODO: Increment / decrement operators
+// Console.WriteLine("----- Shorthand -----");
+x++;
+y--;
+Console.WriteLine(x);
+Console.WriteLine(y);
+
+
+// // TODO: Operators can be shorthand: a = a + b
+// a += b;
+Console.WriteLine(a);
+
+
+// // TODO: Logical operators &&, ||
+// Console.WriteLine("----- Logic Operators -----");
+Console.WriteLine(x > y && y >= 5);
+Console.WriteLine(x > y || y >= 5);
+
+
+// null-coalescing operators
+string str = null;
+// TODO: the ?? operator uses left operand if not null, or right one if it is
+Console.WriteLine(str ?? "Unknown string");
+
+
+// TODO: the ??= operator assigns the right operand if the left one is null
+// it replaces the code:
+// if (variable is null) {
+//    variable = somevalue;
+// }
+str ??= "New String";
+Console.WriteLine(str);
+```
 
 ### 1.3 Writing C# comments
 

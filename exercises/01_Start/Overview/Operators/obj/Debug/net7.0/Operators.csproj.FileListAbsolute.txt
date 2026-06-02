@@ -1,0 +1,15 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\bin\Debug\net7.0\Operators.exe
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\bin\Debug\net7.0\Operators.deps.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\bin\Debug\net7.0\Operators.runtimeconfig.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\bin\Debug\net7.0\Operators.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\bin\Debug\net7.0\Operators.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.sourcelink.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\refint\Operators.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\Operators.genruntimeconfig.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\Operators\obj\Debug\net7.0\ref\Operators.dll

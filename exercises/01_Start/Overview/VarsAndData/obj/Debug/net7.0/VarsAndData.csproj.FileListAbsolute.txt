@@ -1,0 +1,15 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.sourcelink.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\bin\Debug\net7.0\VarsAndData.exe
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\bin\Debug\net7.0\VarsAndData.deps.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\bin\Debug\net7.0\VarsAndData.runtimeconfig.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\bin\Debug\net7.0\VarsAndData.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\bin\Debug\net7.0\VarsAndData.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\refint\VarsAndData.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\VarsAndData.genruntimeconfig.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Overview\VarsAndData\obj\Debug\net7.0\ref\VarsAndData.dll
