@@ -346,46 +346,309 @@ static void Main(string[] args)
 </doc>
 ```
 
-
-
 ### 1.4 Chapter Quiz
-
-
 
 
 ## 2. C# Program Flow
 
-
-
-
 ### 2.0 Conditionals with "if"
 
+- Flow control / Conditionals
+- Handling error conditions
+- How to perform repetitive operations
 
+- `Exercise Files > Start > Program Flow > Conditional-if > Program.cs`
+
+#### Examples of Decisions Programs Make:
+
+- Does a bank customer have enough money to make their withdrawl
+- Did an airline customer enter the right reservation code to checkin for their flight
+
+#### **Example IF Statement:**
+
+```cs
+int theVal = 51;
+
+// TODO: if-else 
+if (theVal == 50)
+{
+    Console.WriteLine("theVal is 50");
+}
+else if (theVal >= 51 && theVal <= 60)
+{
+    Console.WriteLine("theVal is between 51 and 60");
+}
+else
+{
+    Console.WriteLine("theVal is something else");
+}
+```            
+
+> #TIP:  If you have a lot of else if conditionals, a `switch` statement is often a better option
+
+- **ternary statement:** A condensed version of an if-else statement.
+
+#### Example Ternary Statement:
+
+```cs
+Console.WriteLine(theVal < 50 ? "theVal is small" : "theVal is large");
+```
 
 
 ### 2.1 Conditionals with "switch"
 
+- Usually best when if-else statements would be too cumbersome to read
 
+> #TIP: It is required to put a `break` statement at the end of each case section to prevent other case sections from executing
+
+- Can also **group multiple case labels together**
+
+> #TIP: The `default` label in a switch-statement is sort of like the catch-all `else` statement in an If-Else coditional; indicates what to do when none of the other case labels match the expression
+
+> #TIP: As of C# v.7, you can use _any non-null expression (not just integers)_
+
+- If statements are best when you are making a `boolean` decision. Switch statements are best when you have multiple decision points in a single section of code
+
+> #TIP:  The maximum number of `if-else` conditionals to be practical is **4-5**
+
+#### Example Switch Statement:
+
+- Notice that cases 52-54 are in the same group
+
+```cs
+int theVal = 60;
+
+// TODO: The switch statement
+switch (theVal)
+{
+case 50:
+    Console.WriteLine("theVal is 50");
+    break;
+case 51:
+    Console.WriteLine("theVal is 51");
+    break;
+case 52:
+case 53:
+case 54:
+    Console.WriteLine("theVal is between 52 and 54");
+    break;
+default:
+    Console.WriteLine("theVal is something else");
+    break;
+}
+```            
 
 
 ### 2.2 For loops
 
+- For loops usually have a **control variable** (aka **_iteration count_**) that keeps track of the number of times it has run (traditionally declared as `i`)
+- **loop condition:** if the condition is true the loop will keep going
+- **increment statement:** where we increment the control variable
+- **curly braces:** enclose the code we are going to execute
+
+> #TIP:  Foreach-in loop can be used to iterate over sequences
+
+> #TIP: Strings are also *sequences* (arrays in other languages)
+
+
+#### Example For Loop:
+
+```cs
+int myVal = 15;
+int[] nums = new int[] {3, 14, 15, 92, 6};
+string str = "The quick brown fox jumps over the lazy dog";
+
+// TODO: the basic for loop
+Console.WriteLine("The basic for loop:");
+for (int i = 0; i < myVal; i++)
+{
+    Console.WriteLine("i is currently {0}", i);
+}
+```
+
+#### Example Foreach Loop:
+
+```cs
+// TODO: the foreach-in loop can be used to iterate over sequences
+// Console.WriteLine("The foreach loop:");
+foreach (int i in nums)
+{
+    Console.WriteLine("i is currently {0}", i);
+}
+```
+
+#### Example Looping Through Characters in a String:
+
+```cs
+// TODO: count the number of o's in the string
+var count = 0;
+foreach (char c in str)
+{
+    if (c == 'o')
+    {
+        count++;
+    }
+}
+Console.WriteLine("Counted {0} o characters", count);
+```
+
+> #TIP: **How to Print a Blank Line:** `Console.WriteLine();`
 
 
 
 ### 2.3 While loops
 
 
+- For loops are usually used to execute code a given number of times; While loops execute until a certain condition is met. In other words, in a for loop, you know how many times it should execute, but in a while you don't
+- In the **parentheses** you define the logical expression that will be evaluated each time though the loop
+
+> #TIP: **How to Display Prompt and Receive Input from User:** `inputStr = Console.ReadLine();`
+
+> #TIP: The `do-while` loop is always guaranteed to run at least one time, whereas the basic `while` loop may never execute
+
+
+#### Example While Loop:
+
+```cs
+// TODO: basic while loop executes while the gate condition is true
+Console.WriteLine("Basic while() loop:");
+while (inputStr != "exit")
+{
+    inputStr = Console.ReadLine();
+    Console.WriteLine("You entered: {0}", inputStr);
+}
+```
+
+#### Example Do-While Loop:
+
+```cs
+// TODO: the do-while loop always executes at least one time
+Console.WriteLine("The  do-while() loop:");
+do
+{
+    inputStr = Console.ReadLine();
+    Console.WriteLine("You entered: {0}", inputStr);
+} while (inputStr != "exit");
+```
 
 
 ### 2.4 Using break and continue
 
+- Sometimes you want to be able to stop the execution of a loop before the ending condition is reached
+- Ex: find first instance of a value that is larger than 40
 
+> #OBSERVATION: This is basically the purpose of an indexOf function
+
+> #TIP: Use the `break` statement to terminate the loop early
+
+> #TIP: The `continue` statement causes the loop to skip over the rest of the statements in _this iteration_ and continue to the next iteration of the loop
+
+#### Example Loop with Break:
+
+```cs
+int[] values = {15, 7, 12, 23, 41, 28, 9, 17, 36};
+
+Console.WriteLine("Using break:");
+foreach (int val in values)
+{
+    // print the value
+    Console.WriteLine($"val is currently {val}");
+
+    // TODO: The break statement stops the loop and exits
+    if (val >= 40) { break; }
+}
+```
+
+#### Example Loop with Continue:
+
+```cs
+int[] values = {15, 7, 12, 23, 41, 28, 9, 17, 36};
+
+Console.WriteLine("Using continue :");
+foreach (int val in values)
+{
+    // TODO: The continue statement skips the rest of the loop entirely
+    // and jumps to the next iteration (if there is one)
+    if (val >= 20 && val <= 29) { continue; }
+
+    // print the value
+    Console.WriteLine($"val is currently {val}");
+}
+```
 
 
 ### 2.5 Exceptions
 
+- Sometimes things go wrong in our programs and its necessary to handle those errors so the user doesn't have a bad experience
+- In C# we use a programming technique called **exception handling** to catch errors before the hit the user
 
+- **try block:** the code that might cause an exeception that you want to catch if it does
+- **catch block:** where the exception error can be handled before the user sees it; you can customize the error message for a better user experience
+
+> #TIP: You can trigger a specific exception by using the `throw` statement
+
+- **finally block:** Will always run even if none of the catch blocks are triggered; good place to do resource/garbage cleanup
+
+> #TIP: Exceptions are used throughout C# and .NET; provide a good mechanism for ***grouping error-handling code which keeps the main program logic easier to read***
+
+#### Example Generic Try-Catch Exception-Handler Block:
+
+```cs
+int x = 1002;
+int y = 0;
+int result;
+
+// TODO: Generic try-catch expressions make error checking easier
+try
+{
+    result = x / y;
+    Console.WriteLine("The result is: {0}", result);
+}
+catch
+{
+    Console.WriteLine("Whoops!"); // in real life you'd handl much more gracefully
+}
+```            
+
+#### Example Complex Real-World Try-Catch Exception-Handler Block:
+
+```cs
+int x = 1002;
+int y = 0;
+int result;
+
+// TODO: Divide-by-zero Exception Handler
+try
+{
+    if (x > 1000)
+    {
+        throw new ArgumentOutOfRangeException("x", "x has to be 1000 or less");
+    }
+    result = x / y;
+    Console.WriteLine("The result is: {0}", result);
+}
+catch (DivideByZeroException e)
+{
+    Console.WriteLine("Whoops!");
+    Console.WriteLine(e.Message);
+}
+catch (ArgumentOutOfRangeException e)
+{
+    Console.WriteLine("Sorry, 1000 is the limit");
+    Console.WriteLine(e.Message);
+}
+finally
+{
+    Console.WriteLine("This code always runs");
+}
+```            
+**Console Result:**
+
+```bash
+Sorry, 1000 is the limit
+x has to be 1000 or less (Parameter 'x')
+This code always runs
+```
 
 
 ### 2.6 Chapter Quiz

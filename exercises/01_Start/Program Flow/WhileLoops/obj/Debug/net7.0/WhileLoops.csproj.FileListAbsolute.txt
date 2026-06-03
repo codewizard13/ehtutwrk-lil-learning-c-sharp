@@ -1,0 +1,15 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\bin\Debug\net7.0\WhileLoops.exe
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\bin\Debug\net7.0\WhileLoops.deps.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\bin\Debug\net7.0\WhileLoops.runtimeconfig.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\bin\Debug\net7.0\WhileLoops.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\bin\Debug\net7.0\WhileLoops.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.sourcelink.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\refint\WhileLoops.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\WhileLoops.genruntimeconfig.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Program Flow\WhileLoops\obj\Debug\net7.0\ref\WhileLoops.dll
