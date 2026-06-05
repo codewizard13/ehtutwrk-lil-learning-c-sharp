@@ -948,7 +948,49 @@ if (succeeded) {
 
 ### 3.5 </> Code Challenge: Count the data types
 
+> #TIP: In .NET, all data types are essentially objects and are subclasses of the base `object` class. 
 
+- **Built-In Types docs:** https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+- **Floating-point Numeric Types docs:** https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
+
+#### Example of How to Test Variable Types:
+
+```cs
+// C# code​​​​​​‌‌‌‌‌​‌‌‌‌​‌‌​​‌​​​‌​‌​‌​ below
+using System;
+
+// Write your answer here, and then test your code.
+// Your job is to implement the findLargest() method.
+
+public class Answer {
+    // Change these Boolean values to control whether you see 
+    // the expected result and/or hints.
+    public  static Boolean ShowExpectedResult = false;
+    public  static Boolean ShowHints = false;
+
+    public static bool CountTheType(object Arg, string TypeToCount) {
+        // Your code goes here. Return true if the type of the Arg is the same
+        // as what the TypeToCount parameter says to count.
+        return false;
+    }
+}
+
+// This is how your code will be called.
+// You can edit this code to try different testing cases.
+object[] items = {1, 2, "Hello!", "World", 'X', true, 2.0, ".NET", 'A', "😎", 'ť'};
+int total = 0;
+// string CountType = "System.String";
+// string CountType = "System.Char";
+// string CountType = "System.Int32";
+// string CountType = "System.Boolean";
+string CountType = "System.Double";
+foreach (object item in items) {
+    if (Answer.CountTheType(item, CountType)) {
+		total++;
+	}
+}
+```
 
 
 ### 3.6 Solution: Count the data types
