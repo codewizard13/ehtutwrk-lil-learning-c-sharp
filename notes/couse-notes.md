@@ -739,16 +739,142 @@ Console.WriteLine(outstr.IndexOf("fox"));
 
 ### 3.1 String formatting
 
+- **Precision specifier:** The number in a formatting string that specifies the decimal precision (how many decimal points)
+
+#### Example of Precision Specifiers:
+
+```cs
+// TODO: Add a number after the format to specify precision
+Console.WriteLine("{0:D6}, {0:N2}, {0:F1}, {0:G3}", val1);
+```
+
+**Result:**
+
+```sh
+001234, 1,234.00, 1234.0, 1.23E+03
+```
+
+#### Examples of String Formatting:
+
+> The last example is how to generate a data table (like a text version of a spreadsheet)
+
+```cs
+int[] quarters = {1,2,3,4};
+int[] sales = {100000, 150000, 200000, 225000};
+double[] intlMixPct = {.386, .413, .421, .457};
+string str1 = "TestStr";
+int val1 = 1234;
+decimal val2 = 1234.5678m;
+
+// Basic Formatting information
+Console.WriteLine("{0}", str1);
+
+// TODO: Specifying Numerical formatting
+// General format is {index[,alignment]:[format]}
+// Common types are N (Number), G (General), F (Fixed-point), 
+// E (Exponential), D (Decimal), P (Percent), X (Hexadecimal),
+// C (Currency in local format)
+Console.WriteLine("{0:D}, {0:N}, {0:F}, {0:G}", val1);
+Console.WriteLine("{0:E}, {0:N}, {0:F}, {0:G}", val2);
+
+
+// TODO: Add a number after the format to specify precision
+Console.WriteLine("{0:D6}, {0:N2}, {0:F1}, {0:G3}", val1);
+
+// TODO: Formatting with alignment and spacing
+Console.WriteLine("{0,12} {1,12} {2,12} {3,12}", quarters[0], quarters[1], quarters[2], quarters[3]);
+Console.WriteLine("{0,12:C0} {1,12:C0} {2,12:C0} {3,12:C0}", sales[0], sales[1], sales[2], sales[3]);
+Console.WriteLine("{0,12:P0} {1,12:P0} {2,12:P1} {3,12:P2}", intlMixPct[0], intlMixPct[1], intlMixPct[2], intlMixPct[3]);
+```
+
+
+- **Standard numeric format strings docs:** https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings
 
 
 
 ### 3.2 String interpolation
 
+- **string interpolation:** lets you place variables and expressions directly into the string instead of using placeholders; a lot easier to read than the index (e.g., `{0}`) version
 
+- interpolated strings are defined using a `$` outside the quoted string
+
+> #TIP:  **How to escape curly braces to print literal curly braces?**: Use double braces `{{somevar_or_expression}}`
+
+
+### Examples of String Interpolation
+
+```cs
+// Declare some variables
+string make = "Mercedes-Benz";
+string model = "G Class";
+int year = 2020;
+float miles = 8_450.27f;
+decimal price = 60_275.0m;
+
+// EXAMPLE: Output information using formatting
+Console.WriteLine("This car is a {0} {1} {2}, with {3} miles and costs ${4}", year, make, model, miles, price);
+
+// EXAMPLE: Using string interpolation
+Console.WriteLine($"This car is a {year} {make} {model}, with {miles} miles and costs ${price}");
+
+// EXAMPLE: String interpolation with currency and formatting and decimal precision 
+Console.WriteLine($"This car is a {year} {make} {model}, with {miles} miles and costs {price:C2}");
+
+// EXAMPLE: Inline expressions (i.e., inside braces) - Miles to Kilometers conversion
+Console.WriteLine($"This car is a {year} {make} {model}, with {{{miles * 1.6:F2}}} km and costs {price:C2}");
+```
 
 
 ### 3.3 Using StringBuilder
 
+
+
+
+
+
+- **StringBuilder class:** makes building strings out of other strings easier and more efficient; Located in `System.Text` namespace
+
+> #TIP: In .NET the String object is immutable; making changes to strings actually creates a copy of the string behind-the-scenes, which drags on performance because memory needs to be allocated for the string each time
+
+#### Examples of Using StringBuilder Class
+
+```cs
+int jumpCount = 10;
+string[] animals = {"goats", "cats", "pigs"};
+
+// EXAMPLE: create a StringBuilder
+StringBuilder sb = new StringBuilder("Initial string.", 200);
+
+// EXAMPLE: print some basic stats about the StringBuilder
+Console.WriteLine($"Capacity: {sb.Capacity}; Length: {sb.Length}");
+
+// EXAMPLE: Add some strings to the builder using Append
+sb.Append("The quick brown fox ");
+sb.Append("jumped over the lazy dog.");
+
+// EXAMPLE: AppendLine can append a line ending
+sb.AppendLine();
+
+// EXAMPLE: AppendFormat can be used to append formatted strings
+sb.AppendFormat("He did this {0} times.", jumpCount);
+sb.AppendLine();
+
+// EXAMPLE: AppendJoin can iterate over a set of values
+sb.Append("He also jumped over ");
+sb.AppendJoin(',', animals);
+
+// EXAMPLE: Modify the content using Replace
+sb.Replace("fox", "cat");
+
+// EXAMPLE: Insert content at any index
+sb.Insert(0, "This is the ");
+
+// EXAMPLE: Convert to a single string
+Console.WriteLine($"Capacity: {sb.Capacity}; Length: {sb.Length}");
+Console.WriteLine(sb.ToString()); // serialize all content in stringbuilding to final string
+```
+
+- **Docs:** https://learn.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=net-10.0
 
 
 
