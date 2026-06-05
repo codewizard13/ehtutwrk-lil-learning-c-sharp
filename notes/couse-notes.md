@@ -737,20 +737,6 @@ Console.WriteLine(outstr.IndexOf("fox"));
 - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 3.1 String formatting
 
 
