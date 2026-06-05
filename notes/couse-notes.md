@@ -880,7 +880,70 @@ Console.WriteLine(sb.ToString()); // serialize all content in stringbuilding to 
 
 ### 3.4 String parsing
 
+> #TIP: Using `try-catch` handler because the parser might throw an exception
 
+> #TIP: **How to parse a floating point number into integer:** Tell the parser to allow floating point format but using a **number styles class** (located in `System.Globalization` namespace); #GOTCHA: You can only parse a float into an int if the decimal point value is zero — it doesn't work when non-zero.
+
+- **out parameter:** returns the actual parsed result from `TryParse()`, in addition to the default boolean return value
+
+> #TIP: `TryParse` function can be simpler to use than the whole try-parse block with exception handlers???
+
+> #TIP: Use `Parse()` when invalid input should be treated as an error, because it can throw an exception.
+
+> #TIP: Use `TryParse()` when input might be invalid, because it returns true/false instead of throwing.
+
+> In C# TryParse-style methods, the boolean return value tells you whether the operation succeeded, and the out parameter carries the actual parsed result, so out is not a second boolean but the value you get back if parsing worked.
+
+#### Examples of String Parsing:
+
+```cs
+string numStr1 = "1";
+string numStr2 = "2.00";
+string numStr3 = "3,000";
+string numStr4 = "3,000.00";
+
+// The Parse function attempts to parse a string into a number
+// but it might throw an exception, so we need to catch that
+int targetNum=0;
+try {
+    // TODO: Use Parse to try a simple integer
+    targetNum = int.Parse(numStr1);
+    Console.WriteLine(targetNum);
+
+    // TODO: Use Parse to try a floating point number
+    // This only works if the decimal value is 0
+    targetNum = int.Parse(numStr2, NumberStyles.Float);
+    Console.WriteLine(targetNum);
+
+    // TODO: Use Parse to try a number with thousands marker
+    targetNum = int.Parse(numStr3, NumberStyles.AllowThousands);
+    Console.WriteLine(targetNum);
+
+    // TODO: Use Parse to try a number with thousands marker AND decimal
+    targetNum = int.Parse(numStr4, NumberStyles.Float | NumberStyles.AllowThousands);
+    Console.WriteLine(targetNum);
+
+    // TODO: This works with other types too, like bool
+    Console.WriteLine($"{bool.Parse("True")}");
+
+    // TODO: Or floating point numbers
+    Console.WriteLine($"{float.Parse("1.235"):F2}");
+
+}
+catch {
+    Console.Write("Conversion failed");
+}
+
+// TODO: The TryParse function is similar but handles the exceptions for us
+bool succeeded = false;
+succeeded = Int32.TryParse(numStr1, out targetNum);
+
+if (succeeded) {
+    Console.WriteLine($"{targetNum}");
+}
+```
+
+- **docs:** https://learn.microsoft.com/en-us/dotnet/standard/base-types/parsing-strings
 
 
 ### 3.5 </> Code Challenge: Count the data types
@@ -894,6 +957,9 @@ Console.WriteLine(sb.ToString()); // serialize all content in stringbuilding to 
 
 
 ### 3.7 Chapter Quiz
+
+
+
 
 
 
