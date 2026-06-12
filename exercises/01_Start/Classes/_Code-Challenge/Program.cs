@@ -77,17 +77,20 @@ class Program
 
 
         // // More than three Savings withdrawals should result in $2 charge.
-        // saving.Withdraw(10.0m);
-        // saving.Withdraw(20.0m);
-        // saving.Withdraw(30.0m);
-        // IsSuccessful &= (saving.Balance == 993.75m);
+        saving.Withdraw(10.0m);
+        saving.Withdraw(20.0m);
+        saving.Withdraw(30.0m);
+        IsSuccessful &= (saving.Balance == 993.75m);
+
+        Console.WriteLine($"Savings Balance after exceeding 3 withdrawls (including $2 fee) = {saving.Balance}");
+
 
         // // try to overdraw savings - this should be denied
-        // saving.Withdraw(2000.0m);
-
+        saving.Withdraw(2000.0m);
         // IsSuccessful &= (saving.Balance == 993.75m);
 
-        // Console.WriteLine($"Checking Balance after withdrawing {withdrawl_amount} (+ $35 overdraft fee) = {checking.Balance}");
+        Console.WriteLine($"Savings Balance after attempting to overdraw = {saving.Balance}");
+
 
         Console.WriteLine("\n===============================================\n");
 

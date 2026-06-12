@@ -99,14 +99,13 @@ public class CheckingAcct : BankAccount
 
     public override decimal Withdraw(decimal amount)
     {
+        // Update the balance
+        Balance -= amount;
+
         if (amount > Balance)
         {
-            // Charge $35 fee and allow overdraft
-            Balance = Balance - amount - 35;
-        }
-        else
-        {
-            Balance = Balance - amount;
+            // Charge $35 fee
+            Balance -= 35;
         }
 
         return Balance;
@@ -116,6 +115,7 @@ public class CheckingAcct : BankAccount
 
 public class SavingsAcct : BankAccount
 {
+    private int _withdrawl_count = 0;
 
     public SavingsAcct(string first_name, string last_name, decimal interest_rate, decimal start_balance = 0.0m)
         : base(first_name, last_name, start_balance)
@@ -135,31 +135,24 @@ public class SavingsAcct : BankAccount
         return Balance;
     }
 
-    // public string Author {
-    //     get => _author;
-    //     set => _author = value;
-    // }
-
-    private int _withdrawals = 0;
-
     public override decimal Withdraw(decimal amount)
     {
-        // Prevent overdraft on savings
-        if (amount > Balance)
-        {
-            return Balance;
-        }
+        // Prevent withdrawl if it would overdraft
+        // if ( amount > Balance ) { return "\n\n------ Withdrawl not allowed - Insufficient funds ------\n\n"; }
+        if ( amount > Balance ) { return Balance; }
 
         Balance -= amount;
-        _withdrawals++;
+        _withdrawl_count++;
 
-        if (_withdrawals > 3)
-        {
-            // charge $2 after more than three withdrawals
+        // Charge $2 if withdrawls greater than 3
+        if (_withdrawl_count > 3) {
             Balance -= 2;
         }
 
         return Balance;
+
     }
+
+
 
 }
