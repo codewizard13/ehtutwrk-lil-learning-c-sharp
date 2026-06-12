@@ -8,8 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="02_answer-start.cs;03_test-code.cs" />
-  </ItemGroup>
+<ItemGroup>
+  <Compile Remove="ref\**\*" />
+</ItemGroup>
 
 </Project>
