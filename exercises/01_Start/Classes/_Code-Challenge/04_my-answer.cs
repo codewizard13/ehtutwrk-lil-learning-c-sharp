@@ -90,8 +90,7 @@ public class BankAccount
 
 public class CheckingAcct : BankAccount
 {
-    // private string _firstName;
-    // private string _lastName;
+
     public CheckingAcct(string first_name, string last_name, decimal start_balance = 0.0m)
         : base(first_name, last_name, start_balance)
     {
@@ -114,6 +113,38 @@ public class CheckingAcct : BankAccount
 
 }
 
-// public class SavingsAcct : BankAccount {
+public class SavingsAcct : BankAccount
+{
 
-// }
+    public SavingsAcct(string first_name, string last_name, decimal interest_rate, decimal start_balance = 0.0m)
+        : base(first_name, last_name, start_balance)
+    {
+
+    }
+
+    public decimal InterestRate
+    {
+        get; set;
+    }
+
+    public decimal ApplyInterest()
+    {
+        return Balance *= (1 + InterestRate);
+    }
+
+
+    public override decimal Withdraw(decimal amount)
+    {
+        // Update the balance
+        Balance -= amount;
+
+        if ( amount > Balance)
+        {
+            // Charge $35 fee
+            Balance -= 35;
+        }
+
+        return Balance;
+    }
+
+}
