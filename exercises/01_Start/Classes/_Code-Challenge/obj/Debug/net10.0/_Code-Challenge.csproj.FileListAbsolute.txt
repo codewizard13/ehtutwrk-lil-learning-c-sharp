@@ -1,0 +1,15 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.sourcelink.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\bin\Debug\net10.0\_Code-Challenge.exe
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\bin\Debug\net10.0\_Code-Challenge.deps.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\bin\Debug\net10.0\_Code-Challenge.runtimeconfig.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\bin\Debug\net10.0\_Code-Challenge.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\bin\Debug\net10.0\_Code-Challenge.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\refint\_Code-Challenge.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\_Code-Challenge.genruntimeconfig.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Classes\_Code-Challenge\obj\Debug\net10.0\ref\_Code-Challenge.dll
