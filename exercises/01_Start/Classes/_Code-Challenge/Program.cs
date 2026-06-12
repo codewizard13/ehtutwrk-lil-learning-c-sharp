@@ -70,8 +70,11 @@ class Program
 
 
         // // Apply the Savings interest.
-        // saving.ApplyInterest();
-        // IsSuccessful &= (saving.Balance == 1055.75m);
+        saving.ApplyInterest();
+        IsSuccessful &= (saving.Balance == 1055.75m);
+
+        Console.WriteLine($"Savings Balance after applying interest = {saving.Balance}");
+
 
         // // More than three Savings withdrawals should result in $2 charge.
         // saving.Withdraw(10.0m);

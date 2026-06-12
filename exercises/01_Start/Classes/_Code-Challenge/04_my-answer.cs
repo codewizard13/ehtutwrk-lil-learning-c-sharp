@@ -72,13 +72,13 @@ public class BankAccount
 
     public virtual decimal Deposit(decimal amount)
     {
-        Balance+= amount;
+        Balance += amount;
         return Balance;
     }
 
     public virtual decimal Withdraw(decimal amount)
     {
-        Balance-= amount;
+        Balance -= amount;
         return Balance;
     }
 
@@ -99,13 +99,14 @@ public class CheckingAcct : BankAccount
 
     public override decimal Withdraw(decimal amount)
     {
-        // Update the balance
-        Balance -= amount;
-
-        if ( amount > Balance)
+        if (amount > Balance)
         {
-            // Charge $35 fee
-            Balance -= 35;
+            // Charge $35 fee and allow overdraft
+            Balance = Balance - amount - 35;
+        }
+        else
+        {
+            Balance = Balance - amount;
         }
 
         return Balance;
@@ -119,7 +120,8 @@ public class SavingsAcct : BankAccount
     public SavingsAcct(string first_name, string last_name, decimal interest_rate, decimal start_balance = 0.0m)
         : base(first_name, last_name, start_balance)
     {
-
+        InterestRate = interest_rate;
+    
     }
 
     public decimal InterestRate
@@ -129,19 +131,32 @@ public class SavingsAcct : BankAccount
 
     public decimal ApplyInterest()
     {
-        return Balance *= (1 + InterestRate);
+        Balance *= (1 + InterestRate);
+        return Balance;
     }
 
+    // public string Author {
+    //     get => _author;
+    //     set => _author = value;
+    // }
+
+    private int _withdrawals = 0;
 
     public override decimal Withdraw(decimal amount)
     {
-        // Update the balance
-        Balance -= amount;
-
-        if ( amount > Balance)
+        // Prevent overdraft on savings
+        if (amount > Balance)
         {
-            // Charge $35 fee
-            Balance -= 35;
+            return Balance;
+        }
+
+        Balance -= amount;
+        _withdrawals++;
+
+        if (_withdrawals > 3)
+        {
+            // charge $2 after more than three withdrawals
+            Balance -= 2;
         }
 
         return Balance;
