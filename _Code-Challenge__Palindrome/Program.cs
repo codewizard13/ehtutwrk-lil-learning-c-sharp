@@ -11,8 +11,11 @@ class Program
         // TESTING
         HandleMaybePalindrome(sb.ToString());
         HandleMaybePalindrome("madam");
+        HandleMaybePalindrome("Madam");
         HandleMaybePalindrome("Madame");
         HandleMaybePalindrome("Car lot");
+        HandleMaybePalindrome("Able was I ere I saw Elba");
+        HandleMaybePalindrome("A Toyota's a Toyota");
     }
 
     /* Function: determine if a string is a palindrome */

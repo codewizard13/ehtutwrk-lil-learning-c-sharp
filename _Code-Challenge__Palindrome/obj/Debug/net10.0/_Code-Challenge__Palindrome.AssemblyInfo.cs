@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("_Code-Challenge__Palindrome")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6995c1f47f572304817eb8af64bd6adcaf2a70f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa0bceb2efc305662d8c038973ed2aecbaf45a69")]
 [assembly: System.Reflection.AssemblyProductAttribute("_Code-Challenge__Palindrome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("_Code-Challenge__Palindrome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

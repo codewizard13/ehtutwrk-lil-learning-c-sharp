@@ -15,7 +15,7 @@
 | -------------------- | ----------------------- |
 | File Name            | README.md               |
 | Date Created         | 06/02/2026                |
-| Date Modified        | --                      |
+| Date Modified        | 06/29/2026                      |
 | Platform             | LinkedIn Learning       |
 | Version              | 0.0.1                   |
 | Programmer / Student | **Eric Hepperle**       |
