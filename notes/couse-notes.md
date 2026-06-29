@@ -50,53 +50,55 @@
 
 #### SIDEBAR: How to remove the extra verbose output in the command line:
 
-    ## ✅ The Command That Removes All Noise
+<article class="ehw-doc-descr">
 
-    ```powershell
-    dotnet run --no-build --no-restore
-    ```
+## ✅ The Command That Removes All Noise
 
-    This gives you **only** your program's actual output:
-    ```
-    Hello World!
-    What is your name?
-    ```
+```powershell
+dotnet run --no-build --no-restore
+```
 
-    No `Restore succeeded`, no build timestamps, no warning blocks — just your app.
+This gives you **only** your program's actual output:
+```
+Hello World!
+What is your name?
+```
 
-    ## 🔄 Your New Workflow
+No `Restore succeeded`, no build timestamps, no warning blocks — just your app.
 
-    Since you're doing a tutorial and will keep editing code:
+## 🔄 Your New Workflow
 
-    | When You've...              | Run This Command                                             |
-    | --------------------------- | ------------------------------------------------------------ |
-    | Changed your code           | `dotnet build` *(then)* `dotnet run --no-build --no-restore` |
-    | Just testing existing build | `dotnet run --no-build --no-restore`                         |
+Since you're doing a tutorial and will keep editing code:
 
-    **Example after editing:**
-    ```powershell
-    dotnet build
-    dotnet run --no-build --no-restore
-    ```
+| When You've...              | Run This Command                                             |
+| --------------------------- | ------------------------------------------------------------ |
+| Changed your code           | `dotnet build` *(then)* `dotnet run --no-build --no-restore` |
+| Just testing existing build | `dotnet run --no-build --no-restore`                         |
 
-    ## ⚠️ Why This Works
+**Example after editing:**
+```powershell
+dotnet build
+dotnet run --no-build --no-restore
+```
 
-    - `--no-restore` skips the NuGet package check
-    - `--no-build` skips compilation and runs the existing `.dll`
-    - Together they skip the CLI noise but still run your program
+## ⚠️ Why This Works
 
-    ## 🎯 Bonus: Fix the Warning Long-Term
+- `--no-restore` skips the NuGet package check
+- `--no-build` skips compilation and runs the existing `.dll`
+- Together they skip the CLI noise but still run your program
 
-    The `NETSDK1138` warning appears because your project targets `net7.0` (out of support). Edit `HelloWorld.csproj`:
+## 🎯 Bonus: Fix the Warning Long-Term
 
-    ```xml
-    <TargetFramework>net8.0</TargetFramework>
-    ```
+The `NETSDK1138` warning appears because your project targets `net7.0` (out of support). Edit `HelloWorld.csproj`:
 
-    Then your warnings disappear entirely and you can just use `dotnet run` normally again. But if your course requires `net7.0`, stick with the `--no-build --no-restore` workflow above.
+```xml
+<TargetFramework>net8.0</TargetFramework>
+```
 
-    This is the cleanest setup for tutorial work without breaking the course requirements!
+Then your warnings disappear entirely and you can just use `dotnet run` normally again. But if your course requires `net7.0`, stick with the `--no-build --no-restore` workflow above.
 
+This is the cleanest setup for tutorial work without breaking the course requirements!
+</article>
 
 
 ### 0.4 CoderPad Challenges

@@ -1,0 +1,5 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Functions\Basics\obj\Debug\net7.0\Basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Functions\Basics\obj\Debug\net7.0\Basics.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Functions\Basics\obj\Debug\net7.0\Basics.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Functions\Basics\obj\Debug\net7.0\Basics.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\exercises\01_Start\Functions\Basics\obj\Debug\net7.0\Basics.sourcelink.json

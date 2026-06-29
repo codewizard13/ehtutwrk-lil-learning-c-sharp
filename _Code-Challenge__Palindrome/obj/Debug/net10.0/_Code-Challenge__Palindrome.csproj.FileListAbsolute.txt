@@ -1,0 +1,15 @@
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\bin\Debug\net10.0\_Code-Challenge__Palindrome.exe
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\bin\Debug\net10.0\_Code-Challenge__Palindrome.deps.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\bin\Debug\net10.0\_Code-Challenge__Palindrome.runtimeconfig.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\bin\Debug\net10.0\_Code-Challenge__Palindrome.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\bin\Debug\net10.0\_Code-Challenge__Palindrome.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.AssemblyInfoInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.AssemblyInfo.cs
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.csproj.CoreCompileInputs.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.sourcelink.json
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\refint\_Code-Challenge__Palindrome.dll
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.pdb
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\_Code-Challenge__Palindrome.genruntimeconfig.cache
+C:\Users\erich\Documents\_tutwrk\linkedin\ehtutwrk-lil-learning-c-sharp\_Code-Challenge__Palindrome\obj\Debug\net10.0\ref\_Code-Challenge__Palindrome.dll
